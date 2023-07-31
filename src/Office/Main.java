@@ -1,17 +1,19 @@
 package Office;
 public class Main {
     public static void main(String[] args) {
-        Worker[] workers = new Worker[5];
+        Worker[] workers = new Worker[6];
         workers[0] = new Worker("Иванов","Александр","Андреевич","Инженер-программист",33,150000,89143532629L);
         workers[1] = new Worker("Петров","Александр","Витальевич","Инженер-аналитик",45,160000,89053532666L);
         workers[2]  = new Worker("Сидоов","Евгений","Николаевич","Аналитик",50,100000,89057512266L);
         workers[3]  = new Worker("Климов","Павел","Андреевич","Тестировщик",44,100000,89057511958L);
         workers[4]  = new Worker("Калашников","Николай","Анатольевич","Проектировщик",48,120000,89997511198L);
+        workers[5]  = new Boss("Михайлов","Николай","Николаевич","Босс",54,220000,89117621198L);
 
         workers[4].Who_Is();
 
         //Upgrade_Salary(workers,45, 5000);
-        Worker.Upgrade_Salary_In_Class(workers,45,5000);
+        //Worker.Upgrade_Salary_In_Class(workers,45,5000);
+        Boss.Upgrade_Salary_In_Class(workers,45,5000);
         Show_Workers(workers);
         Worker.Average_Age_And_Salary(workers);
 

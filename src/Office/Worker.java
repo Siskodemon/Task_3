@@ -1,7 +1,5 @@
 package Office;
 
-import java.math.BigInteger;
-
 public class Worker {
     private String lastname;
     private String name;
@@ -32,16 +30,19 @@ public class Worker {
     public int Get_Salary(){
         return this.salary;
     }
+    public String Get_Job_Title(){
+        return this.job_title;
+    }
 
     public void Set_Salary(int salary){
         this.salary = salary;
     }
 
-    public static void Upgrade_Salary_In_Class(Worker[] workers,int age,int bargain){
+    /*public static void Upgrade_Salary_In_Class(Worker[] workers,int age,int bargain){
         for (int i=0;i<workers.length;i++){
             if (workers[i].Get_Age() >= 45) workers[i].Set_Salary(workers[i].Get_Salary()+bargain);
         }
-    }
+    }*/
 
     public static void Average_Age_And_Salary(Worker[] workers){
         int buff_age = 0;
